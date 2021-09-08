@@ -85,6 +85,10 @@ button {
 }
 
 /*******************
+*Action
+*******************/
+
+/*******************
 * Layout
 *******************/
 .section {
@@ -149,6 +153,11 @@ button {
 }
 
 .card {
+  background-color: #afafaf;
+  margin-bottom: 20px;
+  height: 100%;
+}
+.card:focus{
   background-color: #fff;
   margin-bottom: 20px;
   height: 100%;
@@ -176,8 +185,8 @@ button {
   display: block;
   content: '';
   width: calc(100% - 60px);
-  height: 7px;
-  background-color: #fcee21;
+  height: 3px;
+  background-color: #00d7e6;
   position: absolute;
   top: -10px;
   left: 30px;
@@ -241,7 +250,7 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-color: #232828;
 }
 
 .bg-color--subcolor {
