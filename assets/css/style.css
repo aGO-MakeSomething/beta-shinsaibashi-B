@@ -158,9 +158,41 @@ button {
   width: 100%;
 }
 
-.column:focus-within{
+#Stretch_type1:focus-within{
   padding-top: 50px;
-  padding-bottom: 250px;
+  padding-bottom: 125px;
+}
+#Stretch_type2:focus-within{
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+#Stretch_type3:focus-within{
+  padding-top: 50px;
+  padding-bottom: 125px;
+}
+#Stretch_type4:focus-within{
+  padding-top: 50px;
+  padding-bottom: 245px;
+}
+#Stretch_type5:focus-within{
+  padding-top: 50px;
+  padding-bottom: 275px;
+}
+#Stretch_type6:focus-within{
+  padding-top: 50px;
+  padding-bottom: 155px;
+}
+
+.button{
+  transition: 0.5;
+  width: 300px;
+  height: 75px;
+  background: rgba(20, 20, 20, 0.5);
+}
+.button: hover{
+  width: 300px;
+  height: 75px;
+  background: rgba(250, 250, 250, 1.0);
 }
 
 .card{
