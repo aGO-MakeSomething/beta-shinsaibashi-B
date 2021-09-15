@@ -134,6 +134,20 @@ button {
     margin-right : 25px;
 }
 
+#center-parent{
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center{
+  position: absolute;
+  transform: translateY(0px);
+  text-align: center;
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 1100px) {
   .container {
     width: calc(100% - 40px);
@@ -185,6 +199,7 @@ button {
 
 .button{
   transition: 0.3s;
+  transform-origin: 50%,50%;
   width: 300px;
   height: 75px;
   background: rgba(20, 20, 20, 0.5);
@@ -192,9 +207,16 @@ button {
 .button:hover{
   transition: 0.3s;
   width: 325px;
-  height: 90px;
-  background: rgba(250, 250, 250, 1.0);
+  height: 81.25px;
+  box-shadow:
+  inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f8ff,
+    inset -20px 0 80px #f5faff,
+    inset 20px 0 300px #f5f5ff,
+    inset -20px 0 300px #f5f5fa;
+  background: rgba(250, 250, 250, 0.5);
   color: rgb(30, 30, 30);
+  font-size: 20px;
 }
 
 .card{
@@ -269,9 +291,10 @@ button {
 }
 
 .card__hint {
+  color: rgb(230, 230, 230);
   position: relative;
-  height: 100px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
 }
 
 .card h3 {
@@ -285,6 +308,13 @@ button {
 
 .hint-page .card {
   height: auto;
+}
+
+.hint-page.card.card__title{
+  position: relative;
+  transform: translateY(0px);
+  text-align: center;
+  vertical-align: middle;
 }
 
 .hint-page .card__hint {
@@ -303,8 +333,15 @@ button {
   height: 24px;
 }
 
+.hint-page .card.is-open{
+  height: 300px;
+}
+
 .hint-page .card.is-open .card__hint {
   display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .hint-page .card.is-open .card__arrow {
@@ -344,7 +381,7 @@ button {
 }
 
 .bg-color--subcolor {
-  background-color: #d9e021;
+  background: rgba(45, 45, 45, 0.5);
 }
 
 .bg-color--gray {
@@ -427,7 +464,7 @@ button {
 */
 
 .section-title--keycolor {
-  background-color: #39b54a;
+  background-color: #fff;
 }
 
 .section-title--story {
@@ -443,7 +480,7 @@ button {
   line-height: 1.06667;
   margin: 0;
   padding-bottom: 15px;
-  color: #006837;
+  color: #fff;
 }
 
 .section-title--border::after {
