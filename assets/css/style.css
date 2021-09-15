@@ -133,6 +133,9 @@ button {
 .mgr-25{
     margin-right : 25px;
 }
+#font30{
+    font-size: 30px;
+}
 
 #center-parent{
   position: relative;
