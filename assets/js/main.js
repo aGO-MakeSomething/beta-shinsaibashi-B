@@ -18,15 +18,15 @@ const app = Vue.createApp({
       */
       correctAnswer: {
         stage1: {
-          q1: 'あああ',
+          q1: 'フクイラプトル'&&'ふくいらぷとる',
         },
         stage2: {
-          q1: 'いいい',
+          q1: '問題2',
           // q2: 'えええ',
           // q3: 'おおお'
         },
         stage3: {
-          q1: 'ううう',
+          q1: 'とり',
           // q2: 'かかか',
           // q3: 'ききき',
         }
@@ -111,7 +111,7 @@ app.component('answer-input', {
         <input type="text" v-model="inputAnswer" placeholder="ここに答えを入力しよう">
       </div>
       <p v-if="message === ngMessage" class="err-message">{{ message }}</p>
-      <button v-on:click="judgement(inputAnswer)">送信</button>
+      <button v-on:click="judgement(inputAnswer)" class="button">送信</button>
       <p v-if="message === okMessage" class="err-message">{{ message }}</p>
     </div>`,
   methods: {
