@@ -34,9 +34,13 @@
         <section class="section">
           <div class="container">
             <div class="section-parents">
-              <p class="section-title__stage"><span class="mgr-25">STAGE：1</span>恐竜について学ぼう</p>
+              <p class="section-title__stage"><span class="mgr-25">STAGE：1</span>恐竜について知ろう</p>
             </div>
-            <p class="text-center"id="font30">文字盤に隠された恐竜の名前を当てろ！</p>
+            <p class="text-center"><span id="font30">文字盤に隠された恐竜の名前を当てろ！</span><br>
+              <span id="font20">
+            博士の後についていくと、恐竜の化石が集められた部屋に案内された。<br>
+            発見してまもないどうやらこの化石には何かがほられているようだ！<br>
+          この化石に隠された暗号を読み解き、恐竜の種類を明らかにしてくれ！</span></p>
   
             <div class="container">
               <figure class="image__container">
@@ -85,9 +89,9 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">テキストテキストテキストテキストテキスト<br>
-                テキストテキストテキストテキストテキスト<br>
-                テキストテキストテキストテキストテキスト</div>
+              <div class="clear-message__content">文字盤を線の順に読み解くと「フクイラプトル」の文字が浮かび上がった！<br>
+                前に博士が見せてくれたヤツだ。<br>
+                とりあえず、これで恐竜の種類が判明したぞ！</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -109,7 +113,10 @@ Youtube貼り付けここまで -->
               <div class="section-parents">
                 <p class="section-title__stage"><span class="mgr-25">STAGE：2</span>壊されたデータを元に戻そう！</p>
               </div>
-              <p class="text-center"id="font30">研究所に来たら、スパイにサーバーが荒らされていた！</p>
+              <p class="text-center"><span id="font30">スパイにサーバーが荒らされていた！</span><br>
+                <span id="font20">復活させるはずのデータがサーバーから破壊されていた！<br>
+                  だがスパイはバックアップまでは破壊できなかったようだ...<br>
+                パスワードを入力してデータを戻さなければ！</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -133,7 +140,7 @@ Youtube貼り付けここまで -->
                   </figure>
                   <!-- STAGE2-1問題セクション　ここまで -->
                   <!-- STAGE2-1解答入力セクション　ここから -->
-                  <h2 class="section-title"><span class="mgr-25">STAGE：2</span>キーワードを入力(ひらがな)</h2>
+                  <h2 class="section-title"><span class="mgr-25">STAGE：2</span>パスワードを入力(ひらがな)</h2>
                   <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
                   <!-- STAGE2-1解答入力セクション　ここまで -->
@@ -181,8 +188,10 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">テキストテキスト<br>
-                テキストテキストテキスト</div>
+              <div class="clear-message__content">答えは手元のキーボードにあったようだ。<br>
+                アルファベットの横にあるかな入力用のひらがなが答えだった！<br>
+                しかしながら、バックアップを取っていて正解だった！<br>
+                後は復活装置を起動すれば...</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -200,7 +209,8 @@ Youtube貼り付けここまで -->
             <div class="section-parents">
               <p class="section-title__stage"><span class="mgr-25">STAGE：3</span>恐竜を復活させよう！</p>
             </div>
-            <p class="text-center"id="font30">キーワードを入れて機械を動かそう！</p>
+            <p class="text-center"><span id="font30">キーワードを入れて機械を動かそう！</span><br>
+              <span id="font20">データを取り戻したことで、機械が使えるようになった！<br>だが機械はキーワードを入力しないと動かないらしい...<br>ついに最終段階だ、暗号を解き恐竜を復活させてくれ！</span></p>
             <figure class="image__container">
               <img src="assets/images/stage３.png" alt="">
             </figure>
