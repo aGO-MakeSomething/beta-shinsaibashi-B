@@ -136,6 +136,13 @@ button {
 #font30{
     font-size: 30px;
 }
+#font20{
+    font-size: 20px;
+}
+#font15{
+    font-size: 15px;
+}
+
 
 #center-parent{
   position: relative;
@@ -189,15 +196,15 @@ button {
 }
 #Stretch_type4:focus-within{
   padding-top: 50px;
-  padding-bottom: 245px;
+  padding-bottom: 155px;
 }
 #Stretch_type5:focus-within{
   padding-top: 50px;
-  padding-bottom: 275px;
+  padding-bottom: 105px;
 }
 #Stretch_type6:focus-within{
   padding-top: 50px;
-  padding-bottom: 155px;
+  padding-bottom: 95px;
 }
 
 .button{
@@ -295,9 +302,8 @@ button {
 
 .card__hint {
   color: rgb(230, 230, 230);
+  background-color: rgb(60, 60, 60);
   position: relative;
-  height: 100%;
-  width: 100%;
 }
 
 .card h3 {
@@ -337,7 +343,7 @@ button {
 }
 
 .hint-page .card.is-open{
-  height: 300px;
+  height: 100%;
 }
 
 .hint-page .card.is-open .card__hint {
