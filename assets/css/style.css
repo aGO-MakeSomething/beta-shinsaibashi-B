@@ -142,6 +142,23 @@ button {
 #font15{
     font-size: 15px;
 }
+#font__middle{
+  text-align: center;
+}
+#font_light{
+  color: #fff;
+  text-shadow: 
+  0 0 10px #fff;
+  font-size: 20px;
+}
+#size50{
+  height: 50%;
+  width: 50%;
+}
+#size10{
+  height: 10%;
+  width: 10%;
+}
 
 
 #center-parent{
@@ -236,6 +253,10 @@ button {
     align-items: center;
 }
 
+.card__type2{
+  position: relative;
+}
+
 .card__view {
   transform: translateY(0px);
   background-color: #2d2d2d;
@@ -271,6 +292,14 @@ button {
   opacity: 1;
   top: 100%;
   transform: translateY(-100px);
+}
+
+.card__final{
+  font-size: 18px;
+  transition:.4s;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
 }
 
 .card__title {
@@ -696,4 +725,5 @@ button {
 .hidden {
   display: none;
 }
+
 /*# sourceMappingURL=style.css.map */
